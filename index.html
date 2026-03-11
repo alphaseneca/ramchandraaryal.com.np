@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--
+  Ram Chandra Aryal - Portfolio / Brand Site
+  Single-page site: Hero, About, Services, Projects (with detail modal), Contact.
+  To edit: update content in each section; project details use data-* on .portfolio-item.
+  Blogs & Videos block is commented out; uncomment the block and nav link to re-enable.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ram Chandra Aryal. 25+ years in industrial HVAC, cold rooms, refrigeration &amp; plant automation. Chitwan, Nepal.">
+    <title>Ram Chandra Aryal | HVAC &amp; Industrial Solutions</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Ram Chandra <span class="highlight">Aryal</span></div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <!-- <li><a href="#blogs-videos">Blogs &amp; Videos</a></li> -->
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Where Temperature <br> Meets Precision</h1>
+                <p>Industrial HVAC, refrigeration, cold rooms, and plant automation across Nepal. With a major focus on the industrial and agricultural processing sectors in Pokhara, and projects spanning Kathmandu to Chitwan, we deliver commercial-scale systems backed by over 25 years of local experience. Built to withstand our unique climate.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn primary-btn">Get in Touch</a>
+                    <a href="#portfolio" class="btn secondary-btn">View Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section glass-container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="heading-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Over 25 Years in the Industry</h3>
+                    <p>I've spent more than two decades serving businesses across Nepal in HVAC, refrigeration, and plant automation. From large-scale cold rooms and industrial projects in Pokhara to ice cream plants in the capital, that experience means reliable, professional work you can count on, tailored for our local environment.</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> Certified Professional</li>
+                        <li><i class="fas fa-check-circle"></i> Commercial &amp; industrial projects</li>
+                        <li><i class="fas fa-check-circle"></i> Energy efficient solutions</li>
+                    </ul>
+                </div>
+                <div class="about-image-wrap">
+                    <img src="assets/images/profile-image.png" alt="Ram Chandra Aryal" class="about-image">
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <h3>500+</h3>
+                        <p>Projects Done</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>25+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>100%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="section-header">
+                <h2>My Services</h2>
+                <div class="heading-line"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-fire"></i>
+                    <h3>Heating Systems</h3>
+                    <p>Maintenance and installation of furnaces and boilers to ensure warmth during winter.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-wind"></i>
+                    <h3>Ventilation</h3>
+                    <p>Professional ventilation for optimal air quality and flow.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-temperature-low"></i>
+                    <h3>Ice Cream Plant Maintenance</h3>
+                    <p>Full maintenance and servicing of ice cream production equipment and cold chains.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-warehouse"></i>
+                    <h3>Cold Room Setup</h3>
+                    <p>Design, installation, and commissioning of cold rooms and walk-in freezers.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Agricultural Plant Automation</h3>
+                    <p>Climate control and automation for mushroom growing and other agricultural facilities across Nepal: managing humidity, temperature, and ventilation for optimal yields.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="section-header">
+                <h2>Recent Projects</h2>
+                <div class="heading-line"></div>
+            </div>
+            <div class="portfolio-grid">
+                <!--
+                  TO ADD A NEW PROJECT CARD: copy the block below (one full portfolio-item div).
+                  Replace: data-title, data-subtitle, data-detail, data-image, img src, img alt,
+                  and the overlay h3 + p. Keep role="button" tabindex="0" and the same class names.
+                -->
+                <div class="portfolio-item" role="button" tabindex="0" data-title="Industrial Chiller Systems" data-subtitle="Heavy-Duty Commercial Cooling" data-detail="Installation and maintenance of massive industrial water chiller systems for manufacturing plants and large-scale facilities. Ensuring reliable, non-stop operation with precision temperature control and high capacity output for process cooling." data-image="assets/images/portfolio1.png">
+                    <img src="assets/images/portfolio1.png" alt="Industrial Chiller System">
+                    <div class="overlay">
+                        <h3>Industrial Chiller Systems</h3>
+                        <p>Heavy-Duty Commercial Cooling for Factories</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" role="button" tabindex="0" data-title="PLC & Plant Automation" data-subtitle="Precision HVAC Control Panels" data-detail="Custom design and integration of modern HVAC control panels and PLC automation systems. Focus on advanced logic controllers for humidity, temperature, and airflow, giving facility managers in Pokhara and growing industrial estates like Hetauda real-time data to maximize efficiency and minimize energy running costs." data-image="assets/images/portfolio2.png">
+                    <img src="assets/images/portfolio2.png" alt="PLC Automation Panel">
+                    <div class="overlay">
+                        <h3>PLC & Plant Automation</h3>
+                        <p>Precision HVAC Control Panels for Industries</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" role="button" tabindex="0" data-title="AHU & Large Scale Ventilation" data-subtitle="Manufacturing Air Management" data-detail="Deployment of heavy-duty industrial air handling units (AHU) and large-scale ventilation systems. Vital for manufacturing environments requiring stringent air quality, specialized filtration, and consistent volumetric flow under demanding technical conditions." data-image="assets/images/portfolio3.png">
+                    <img src="assets/images/portfolio3.png" alt="Large Scale Ventilation">
+                    <div class="overlay">
+                        <h3>AHU & Large Scale Ventilation</h3>
+                        <p>Manufacturing Air Management across Nepal</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" role="button" tabindex="0" data-title="Dairy & Ice Cream Plants" data-subtitle="Maintenance & Servicing" data-detail="Full maintenance and servicing of dairy and ice cream production equipment and cold chains. This includes keeping freezers, chillers, and production lines at the right temperatures so product quality is maintained even during our hot summers. Scheduled checks help dairy plants across the country avoid costly downtime." data-image="assets/images/portfolio4.png">
+                    <img src="assets/images/portfolio4.png" alt="Ice Cream Plant Maintenance">
+                    <div class="overlay">
+                        <h3>Dairy & Ice Cream Plants</h3>
+                        <p>Maintenance & Servicing</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" role="button" tabindex="0" data-title="Cold Room Setup" data-subtitle="Walk-in Freezer Installation" data-detail="Design, installation, and commissioning of cold rooms and walk-in freezers for commercial and industrial use. From layout and insulation to refrigeration units and controls, each project is tailored to your temperature range and space. The result is a reliable cold storage solution that meets hygiene and efficiency standards." data-image="assets/images/portfolio5.png">
+                    <img src="assets/images/portfolio5.png" alt="Cold Room Setup">
+                    <div class="overlay">
+                        <h3>Cold Room Setup</h3>
+                        <p>Walk-in Freezer Installation</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" role="button" tabindex="0" data-title="Agricultural Plant Automation" data-subtitle="Climate Control & Ventilation" data-detail="Climate control and automation for large-scale mushroom farming and agricultural facilities in Nepal. Custom solutions cover humidity, temperature, and ventilation so growing conditions stay consistent despite outside weather changes, supporting high-quality, high-yield commercial farming." data-image="assets/images/portfolio6.png">
+                    <img src="assets/images/portfolio6.png" alt="Mushroom Production Automation">
+                    <div class="overlay">
+                        <h3>Agricultural Plant Automation</h3>
+                        <p>Climate Control & Ventilation</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="project-modal" class="project-modal" aria-hidden="true">
+                <div class="project-modal-backdrop"></div>
+                <div class="project-modal-box">
+                    <button type="button" class="project-modal-close" aria-label="Close">&times;</button>
+                    <div class="project-modal-image-wrap">
+                        <img class="project-modal-image" src="" alt="">
+                    </div>
+                    <div class="project-modal-content">
+                        <h2 class="project-modal-title"></h2>
+                        <p class="project-modal-subtitle"></p>
+                        <p class="project-modal-detail"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BLOGS & VIDEOS SECTION (commented out; uncomment to show)
+            <div class="section-header" id="blogs-videos">
+                <h2>Blogs &amp; Videos</h2>
+                <div class="heading-line"></div>
+                <p class="section-sub">Articles, how-tos, and video updates. Add your blog or YouTube links below.</p>
+            </div>
+            <div class="links-grid">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="link-card">
+                    <span class="link-card-icon"><i class="fas fa-external-link-alt"></i></span>
+                    <h3>Blog or video title</h3>
+                    <p>Short description or channel name.</p>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="link-card">
+                    <span class="link-card-icon"><i class="fab fa-youtube"></i></span>
+                    <h3>YouTube video or channel</h3>
+                    <p>Add your video or channel link here.</p>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="link-card">
+                    <span class="link-card-icon"><i class="fas fa-newspaper"></i></span>
+                    <h3>Another blog or resource</h3>
+                    <p>Optional description.</p>
+                </a>
+            </div>
+            -->
+        </section>
+
+        <section id="contact" class="contact-section glass-container">
+            <div class="section-header">
+                <h2>Contact</h2>
+                <div class="heading-line"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div class="info-text">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+9779856000432" class="contact-link">+977-9856000432</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info-text">
+                            <h3>Email</h3>
+                            <p><a href="mailto:rcaryal4@gmail.com" class="contact-link">rcaryal4@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info-text">
+                            <h3>Location</h3>
+                            <p>Chitwan &amp; Pokhara, Nepal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <p class="contact-cta-text">Reach out on WhatsApp for quick replies.</p>
+                    <!-- Replace the href below with your dad's WhatsApp link (e.g. https://wa.me/9779856000432) -->
+                    <a href="https://wa.me/9779856000432" target="_blank" rel="noopener noreferrer" class="btn whatsapp-btn" aria-label="Chat on WhatsApp">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer-copyright">&copy; 2026 Ram Chandra Aryal. All Rights Reserved.</p>
+        <p class="footer-credit">Developed by <a href="https://ukesharyal.com.np" target="_blank" rel="noopener noreferrer">Ukesh Aryal</a></p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
