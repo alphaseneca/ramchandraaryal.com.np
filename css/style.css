@@ -186,9 +186,14 @@ header {
 
 /* Sections General */
 section {
-    padding: 5rem 5%;
+    padding: 5rem 0;
+}
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 5%;
+    width: 100%;
 }
 
 .section-header {
@@ -213,12 +218,11 @@ section {
 /* About Section */
 .about-section {
     margin-top: -50px;
-    border-radius: 16px;
+    border-radius: 40px 40px 0 0;
     position: relative;
     z-index: 10;
     background: white;
-    box-shadow: var(--shadow);
-    padding: 4rem;
+    box-shadow: 0 -10px 40px rgba(0,0,0,0.05);
 }
 
 .about-content {
@@ -547,7 +551,6 @@ section {
 .contact-section {
     background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
     color: white;
-    border-radius: 16px;
 }
 
 .contact-section .section-header h2,
@@ -754,7 +757,8 @@ footer {
 
     .about-section {
         margin-top: 0;
-        padding: 2rem;
+        padding: 3rem 0;
+        border-radius: 20px 20px 0 0;
     }
 
     .contact-container {
